@@ -50,6 +50,7 @@ chromeMyAdmin.controller("LoginFormController", ["$scope", "$timeout", "mySQLCli
                 $scope.ssh2UserName = favorite.ssh2UserName;
                 $scope.ssh2Password = favorite.ssh2Password;
                 $scope.ssh2PrivateKey = favorite.ssh2PrivateKey;
+                $scope.colorTheme = favorite.colorTheme || "white";
             });
         });
         $scope.$on(Events.LOGIN, function(event, data) {
@@ -229,6 +230,7 @@ chromeMyAdmin.controller("LoginFormController", ["$scope", "$timeout", "mySQLCli
         $scope.usePortForwarding = "no";
         $scope.ssh2PortNumber = 22;
         $scope.ssh2AuthType = "password";
+        $scope.colorTheme = "white";
     };
 
     $scope.connect = function() {
@@ -272,7 +274,8 @@ chromeMyAdmin.controller("LoginFormController", ["$scope", "$timeout", "mySQLCli
                                 $scope.ssh2AuthType,
                                 $scope.ssh2UserName,
                                 $scope.ssh2Password,
-                                $scope.ssh2PrivateKey);
+                                $scope.ssh2PrivateKey,
+                                $scope.colorTheme);
         }
     };
 
