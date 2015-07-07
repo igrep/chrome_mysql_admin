@@ -303,4 +303,8 @@ chromeMyAdmin.controller("LoginFormController", ["$scope", "$timeout", "mySQLCli
         return isUsePortForwarding() && ($scope.ssh2AuthType === "publickey");
     };
 
+    $scope.switchColorTheme = function() {
+        console.log("Current color theme: " + $scope.colorTheme);
+    };
+
 }]);
