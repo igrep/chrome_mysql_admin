@@ -70,7 +70,8 @@ chromeMyAdmin.constant("Events", {
     CONTINUE_SSH2_PORT_FORWARDING: "continue_ssh2_port_forwarding",
     CONTINUE_SSH2_PORT_FORWARDING_FOR_TEST: "continue_ssh2_port_forwarding_for_test",
     LOGOUT: "logout",
-    LOGIN: "login"
+    LOGIN: "login",
+    COLOR_THEME_SWITCHED: "colorThemeSwitched"
 });
 
 chromeMyAdmin.constant("Modes", {

@@ -1,4 +1,4 @@
-chromeMyAdmin.controller("LoginFormController", ["$scope", "$timeout", "mySQLClientService", "favoriteService", "Events", "identityKeepService", "ssh2PortForwardingService", "UIConstants", "ssh2KnownHostService", function($scope, $timeout, mySQLClientService, favoriteService, Events, identityKeepService, ssh2PortForwardingService, UIConstants, ssh2KnownHostService) {
+chromeMyAdmin.controller("LoginFormController", ["$scope", "$timeout", "mySQLClientService", "favoriteService", "Events", "identityKeepService", "ssh2PortForwardingService", "UIConstants", "ssh2KnownHostService", "colorThemeService", function($scope, $timeout, mySQLClientService, favoriteService, Events, identityKeepService, ssh2PortForwardingService, UIConstants, ssh2KnownHostService, colorThemeService) {
     "use strict";
 
     // Private methods
@@ -304,7 +304,7 @@ chromeMyAdmin.controller("LoginFormController", ["$scope", "$timeout", "mySQLCli
     };
 
     $scope.switchColorTheme = function() {
-        console.log("Current color theme: " + $scope.colorTheme);
+        colorThemeService.switchColorTheme($scope.colorTheme);
     };
 
 }]);
