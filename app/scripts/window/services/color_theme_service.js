@@ -1,4 +1,6 @@
-chromeMyAdmin.factory("colorThemeService", ["$rootScope", "Events", "Configurations", function($rootScope,   Events,   Configurations) {
+chromeMyAdmin.factory("colorThemeService", [
+            "$rootScope", "Events", "Configurations",
+    function($rootScope,   Events,   Configurations) {
     "use strict";
 
     return {
